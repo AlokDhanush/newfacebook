@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    @media (min-width: 768px){
+        body{
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 767px) {
+        body {
+            font-size: 14px;
+        }
+    }
+    body {
+ text-align: center;
+ background-color: rgb(161, 218, 248);
+ }
+
+.another {
+ font-weight: bold;
+ background-color: green;
+ height: 30px;
+ width: 220px;
+ border: solid green;
+ color: white;
+ margin: 15px;
+ }
+
+.but1 {
+ font-weight: bold;
+ background-color: blue;
+ height: 40px;
+ width: 300px;
+ margin: 20px;
+ border: solid blue;
+ color: white;
+ position: relative;
+ top: 20px;
+ margin-bottom: 15px;
+ }
+
+input {
+ height: 40px;
+ width: 300px;
+ margin: 20px;
+ border-color: rgb(72, 141, 198);
+ }
+
+h1 {
+ font-weight: bold;
+ font-family: monospace;
+ color: blue;
+ font-size: 50px;
+
+ }
+
+ #Mypassword {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+ } 
+.checkbox {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    bottom: 40px;
+}
+span {
+    position: relative;
+    bottom: 43px;
+    color:blue;
+}
+#Mypassword {
+    color: red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:italic;
+}
+</style>
+</head>
+<body>
+<h1>facebook</h1>
+<input id = "email" placeholder="Email or mobile number"><br>
+<input id = "password" type="password" placeholder="Password"><br>
+<input class="checkbox" type="checkbox" onclick="showPassword()"><span>Show Password</span>
+<button class="but1" onclick = "checkPassword()">Login</button>
+<br><br>
+-or-<br>
+<a href="newAccount.html"><button class="another">Create new account</button></a><br>
+-or-<br>
+<button class = "another" onclick="getDetails()">Get Email and Password</button>
+<p id = "Mypassword"></p>
+<script>
+    function checkPassword() {
+        var word2 = document.getElementById("password").value;
+        var word1 = document.getElementById("email").value;
+        if(word1 == "Dhanush23@gmail.com" || word1 == "dhanush23@gmail.com"){
+           if(word2 == "Facebook@2023"){
+            var word3 = document.getElementById("Mypassword").innerHTML = "Logging in...";
+            if (word3 == "Logging in..."){
+            window.location.href = "sign.html";
+            }
+        }
+        else if (word2 != "Anju143") {
+                alert("Incorrect Password");
+                el1 = document.querySelector("#password");
+                el1.classList.add("color");
+            }
+        }else if(word1 != "alokdhanush25@gmail.com" || word1 != "Alokdhanush25@gmail.com"){
+                if (word2 != "Anju143"){
+                alert("Incorrect Password and Email");   
+                el2 = document.querySelector("#email");
+                el3 = document.querySelector("#password");
+                el2.classList.add("color");
+                el3.classList.add("color");           
+        } else if(word1 != "alokdhanush25@gmail.com" || word1 != "Alokdhanush25@gmail.com") {
+            if (word2 == "Anju143") {
+                alert("Incorrect Email");
+                el4 = document.querySelector("#email");
+                el4.classList.add("color");
+            } 
+        }
+
+        }
+       }
+    
+    function showPassword(){
+    var x = document.getElementById("password");
+    if(x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+function getDetails() {
+    alert("Email:- dhanush23@gmail.com\nPassword:- Facebook@2023")
+}
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+         @media (min-width: 768px){
+            body{
+               font-size: 18px;
+            }
+         }
+         @media (max-width: 767px){
+            body {
+               font-size: 14px;
+            }
+         }
+            body {
+                text-align: center;
+                background-color: rgb(161, 218, 248);
+            }
+         h1 {
+            color:rgb(28, 94, 159);
+            font-weight: bold;
+            font-family: monospace;
+            background-size: 15px;
+            background-color: rgb(188, 231, 237);
+            text-align:left;
+            padding: 15px;
+            font-size: 50px;
+         }
+         .home {
+            margin-left:55px;
+            border-color:beige;
+            background-color:  rgb(105, 200, 252);
+            color:whitesmoke;
+            height: 38px;
+            width: 38px;
+            position: relative;
+            left: 15px;
+         }
+         .friends {
+            margin-left: 30px;
+            border-color:beige;
+            background-color:  rgb(105, 200, 252);
+            color:whitesmoke;
+            height: 33px;
+            width: 38px;
+            position: relative;
+            bottom: 2px;
+         }
+         .messages {
+            margin-left:15px;
+            border-color:beige;
+            background-color:  rgb(105, 200, 252);
+            color:whitesmoke;
+            height: 38px;
+            width: 38px;
+            position: relative;
+         }
+         .videos {
+            margin-left: 12px;
+            border-color:beige;
+            background-color:  rgb(105, 200, 252);
+            color:whitesmoke;
+            height: 35px;
+            width: 33px;
+            position: relative;
+            bottom: 4px;
+            left: 3px;
+         }
+         .notify {
+            margin-left:10px;
+            border-color:beige;
+            background-color:  rgb(105, 200, 252);
+            color:whitesmoke;
+            height: 35px;
+            width: 32px;
+            position: relative;
+            bottom: 5px;
+            left: 10px;
+         }
+         .settings {
+            border-radius: 25px;
+            height: 40px;
+            width: 40px;
+            border-color: beige;
+            background: linear-gradient(to right, cyan, skyblue);
+            color: bisque;
+            position: relative;
+            bottom: 104px;
+            right: 15px;
+            margin-left: 4px;
+         }
+         fieldset{
+            border: solid 3px;
+            border-color: rgb(105, 200, 252);
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            background-color: rgb(183, 234, 248);
+         }
+         img {
+            height:50px;
+            width:50px;
+            border-radius: 25px;
+         }
+         span {
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 4px;
+            position:relative;
+            bottom: 20px;
+         }
+         #span {
+            border: solid 0.5px;
+            border-color: azure;
+            padding-bottom: 5px;
+            margin-left: 35px;
+            position:relative;
+            bottom: 25px;
+            font-weight: bold;
+         }
+         .field1 {
+            background-color: azure;
+            border: solid 2px;
+            border-color: rgb(255, 255, 255);
+            width: 200px;
+            margin: auto;
+         }
+         .img1 {
+            height: 200px;
+            width: auto;
+            max-width: 500px;
+            min-width: fit-content;
+         }
+         #like1 {
+            border-radius: 15px;
+            border-color: beige;
+         }
+         #comment1 {
+            border-radius: 15px;
+            border-color: beige;
+         }
+         #comment2 {
+            border-radius: 15px;
+            border-color: beige;
+         }
+         #comment3 {
+            border-radius: 15px;
+            border-color: beige;
+         }
+         #comment4 {
+            border-radius: 15px;
+            border-color: beige;
+         }
+         #share1 {
+            border-radius: 15px;
+            border-color: beige;
+         }
+         #like2 {
+            border-radius: 15px;
+            border-color: beige;  
+         }
+         .color {
+            background-color: blue;
+            font-weight: bold;
+            color: white;
+         }
+         #prfle {
+            border-radius: 25px;
+            height: 45px;
+            width: 45px;
+            border-color: beige;
+            background: linear-gradient(to right, cyan, skyblue);
+            color: bisque;
+            position: relative;
+            bottom: 100px;
+            right: 15px;
+         }
+         #span1 {
+            border: solid 0.5px;
+            border-color: azure;
+            padding-bottom: 5px;
+            margin-left: 70px;
+            position:relative;
+            bottom: 25px;
+            font-weight: bold;
+            position: relative;
+            left: 50px;
+            bottom: 44px;
+         }
+         #image {
+            margin-right: 8px;
+         }
+         .like3 {
+            border-radius: 15px;
+            border-color: beige; 
+         }
+         #like4 {
+            border-radius: 15px;
+            border-color: beige; 
+         }
+         #image2 {
+            position: relative;
+            right: 30px;
+         }
+         #span2 {
+            position: relative;
+            right: 28px;
+         }
+         #post1 {
+            border-radius: 15px;
+            border-color: beige; 
+         }
+         textarea{
+            border-color:black;
+            font-family:'Times New Roman', Times, serif;
+            width:80%;
+            border-radius: 10px;
+         }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+        <h1>facebook</h1>
+        <a href =""><img class="home" src = "Screenshot_2022-12-31-18-38-45-281_com.google.android.googlequicksearchbox.png"></a><a href="friends.html"><img class = "friends" src = "friends.png"><a href="messages.html"><img class="messages" src = "Screenshot_2022-12-31-18-47-06-186_com.google.android.googlequicksearchbox.png"></a><a href="videos.html"><img class = "videos"src ="videos.png"></a><a href = "notify.html"><img class="notify" src = "notify.png"></a><a href ="profile.html"><img id="prfle" src = "Screenshot_2022-12-31-18-36-20-112_com.google.android.googlequicksearchbox.png"></a>
+        <a href="logged.html"><img class="settings" src = "settings.png"></a><br><br>
+        <fieldset class="field1"><a href = ""><img src ="IMG_20210415_071449.jpg"></a><span>Handeercel</span>       <a href = ""><button id="span">...</button></a><br>
+        <a href="1stpic.html"><img class = "img1" src ="hande.jpg"></a><button onclick = "doLike()" id="like1">Like</button><button onclick="comment1()" id="comment1">Cmnt</button><button onclick="doshare1()" id="share1">Share</button>
+        <p id="LIKE1"></p>
+        <p id="POST1"></p>
+        <p id="SHARE1"></p>
+        </fieldset>
+        <fieldset class="field1"><a href = ""><img src = "IMG_20210415_071449.jpg"></a><span>Handeercel</span>      <a href =""><button id="span">...</button></a><br>
+         <a href="2ndpic.html"><img class = "img1" src ="b3595df4bc708fc7c08b80226e14ebe4.jpg"></a><br><button onclick = "doLike1()" id="like2">Like</button><button onclick="comment2()" id="comment2">Cmnt</button><button onclick="doshare2()" id="share1">Share</button>
+         <p id="LIKE2"></p>
+         <p id="POST2"></p>
+         <p id="SHARE2"></p>
+        </fieldset>
+        <fieldset class="field1"><a href= ""><img id = "image2" src ="alok.jpg"></a><span id="span2">Alok Hande</span>      <a href = ""><button id="span1">...</button></a><br>
+          <a href="3rdpic.html"><img class = "img1" src = "FB_IMG_16622723869551608.jpg"></a><br><button onclick = "doLike2()" class="like3">Like</button><button onclick="comment3()" id="comment3">Cmnt</button><button onclick="doshare3()" id="share1">Share</button>
+          <p id="LIKE3"></p>
+          <p id="POST3"></p>
+          <p id="SHARE3"></p>
+         </fieldset>
+        <fieldset class="field1"><a href = ""><img src = " zar1.jpg"></a><span>Zaritskaya</span>      <a href=""><button id="span">...</button></a><br>
+          <a href="4thpic.html"><img class="img1" src="zar.jpg"></a><br><button onclick = "doLike3()" id="like4">Like</button><button onclick="comment4()" id="comment4">Cmnt</button><button onclick="doShare4()" id="share1">Share</button>
+          <p id="LIKE4"></p>
+          <p id="POST4"></p>
+          <p id="SHARE4"></p>
+         </fieldset>
+        <fieldset class="field1"><a href = "https://images.app.goo.gl/oLVj2kSL6E6j9P239"><img src = "https://images.app.goo.gl/oLVj2kSL6E6j9P239"></a><span>Hande fans</span>      <a href=""><button id="span">...</button></a><br>
+         <a href="4thpic.html"><img class="img1" src="https://images.app.goo.gl/PyEqruDzrTXcqMJ7.jpg"></a><br><button onclick = "doLike3()" class="like4">Like</button><button onclick="comment5()" id="comment1">Cmnt</button><button onclick="doShare5()" id="share1">Share</button>
+       </fieldset>
+        </fieldset>
+        <script>
+            function doLike() {
+             const el =   document.querySelector("#like1");
+             el.classList.toggle("color"); 
+             var x = document.getElementById("like1");
+             if (x.innerHTML == "Like"){
+               x.innerHTML = "(1)Like";
+             }  else {
+               x.innerHTML = "Like";
+             }      
+            }
+            function comment1(){
+               const el4 = document.querySelector("#comment1");
+               el4.classList.add("color");
+               document.getElementById("LIKE1").innerHTML = "<textarea placeholder='Comment something...'></textarea><button onclick=doPost() id='post1'>Post</button>";
+            }function doPost() {
+                 alert("Your comment is submitted successfully");
+                 const el = document.querySelector("textarea");
+                  el.remove("textarea");
+                  const el1 = document.querySelector("#post1");
+                  el1.remove("#post1");
+                  document.getElementById("comment1").innerHTML = "(1)Cmnt";
+                  const el5 = document.querySelector("#comment1");
+                  el5.classList.remove("color");
+            }
+            function doshare1(){
+              alert("You cannot share this image");
+            }
+            function doLike1() {
+               const el = document.querySelector("#like2");
+               el.classList.toggle("color");
+               if(el.innerHTML == "Like") {
+                  el.innerHTML = "(1)Like";
+               } else {
+                  el.innerHTML = "Like";
+               }
+            }
+            function comment2() {
+              const el3 = document.querySelector("#comment2");
+              el3.classList.add("color");
+              document.getElementById("LIKE2").innerHTML = "<textarea placeholder='Comment something...'></textarea><button onclick=doPost1() id='post1'>Post</button>";
+            }
+            function doPost1() {
+               alert("Your comment is submitted successfully");
+                 const el7 = document.querySelector("textarea");
+                  el7.remove("textarea");
+                  const el8 = document.querySelector("#post1");
+                  el8.remove("#post1");
+                  document.getElementById("comment2").innerHTML = "(1)Cmnt";
+                  const el6 = document.querySelector("#comment2");
+                  el6.classList.remove("color");
+            }
+            function doshare2(){
+               alert("You cannot share this image");
+            }
+            function doLike2() {
+               const el1 = document.querySelector(".like3");
+               el1.classList.toggle("color");
+               if(el1.innerHTML == "Like") {
+                  el1.innerHTML = "(1)Like";
+               } else {
+                  el1.innerHTML = "Like";
+               }
+            }
+            function comment3() {
+              const el3 = document.querySelector("#comment3");
+              el3.classList.add("color");
+              document.getElementById("LIKE3").innerHTML = "<textarea placeholder='Comment something...'></textarea><button onclick=doPost2() id='post1'>Post</button>";
+            }
+            function doPost2() {
+               alert("Your comment is submitted successfully");
+                 const el = document.querySelector("textarea");
+                  el.remove("textarea");
+                  const el1 = document.querySelector("#post1");
+                  el1.remove("#post1");
+                  document.getElementById("comment3").innerHTML = "(1)Cmnt";
+                  const el5 = document.querySelector("#comment3");
+                  el5.classList.remove("color");
+            }
+            function doshare3(){
+               alert("You cannot share this image")
+            }
+            function doLike3() {
+               const el = document.querySelector("#like4");
+               el.classList.toggle("color");
+               if(el.innerHTML == "Like"){
+                  el.innerHTML = "(1)Like"
+               } else {
+                  el.innerHTML = "Like";
+               }
+            }
+            function doShare4() {
+               alert("You cannot share this image");
+            }
+            function comment4() {
+               const el3 = document.querySelector("#comment4");
+              el3.classList.add("color");
+              document.getElementById("LIKE4").innerHTML = "<textarea placeholder='Comment something...'></textarea><button onclick=doPost3() id='post1'>Post</button>";
+            }
+             function doPost3() {
+               alert("Your comment is submitted successfully");
+                 const el = document.querySelector("textarea");
+                  el.remove("textarea");
+                  const el1 = document.querySelector("#post1");
+                  el1.remove("#post1");
+                  document.getElementById("comment4").innerHTML = "(1)Cmnt";
+                  const el5 = document.querySelector("#comment4");
+                  el5.classList.remove("color"); 
+             }
+        </script>
+  </body>
+</html>

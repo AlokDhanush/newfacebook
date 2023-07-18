@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media (min-width: 768px){
+                body{
+                    font-size: 18px;
+                }
+            }
+            @media (max-width: 767px){
+                body{
+                    font-size: 14px;
+                }
+            }
+            body {
+            text-align:center;
+            background-color:  rgb(161, 218, 248);
+            }
+             h1 {
+              color:rgb(28, 94, 159);
+              font-weight: bold;
+              font-family: monospace;
+              background-size: 15px;
+              background-color: rgb(188, 231, 237);
+              text-align:left;
+              padding: 15px;
+              font-size: 50px;
+            }
+            fieldset {
+            border: solid 3px;
+            border-color: rgb(105, 200, 252);
+            background-color: white;
+            width: 400px;
+            height:min-content;
+            margin: auto;
+            background-color: rgb(183, 234, 248);
+            }
+            .imag1 {
+                height: 150px;
+                width: 350px;
+                position: relative;
+                bottom: 30px;
+                border: solid 2px;
+                border-color: white;
+                border-style: double;
+            }
+            .imag2 {
+                border-radius: 50px;
+                height: 100px;
+                width: 100px;
+                position: relative;
+                bottom: 170px;
+                border: solid 3px;
+                border-color: white;
+                border-style: double;
+            }
+            #editProfile {
+                height: 35px;
+                width: 150px;
+                background-color: rgb(168, 163, 163);
+                color: black;
+                position: relative;
+                bottom: 140px;
+                right: 10px;
+                border-radius: 10px;
+                border-color: white;
+                font-weight: bold;
+            }
+            #addToStory {
+                height: 35px;
+                width: 150px;
+                background-color: rgb(28, 91, 186);
+                color: white;
+                position: relative;
+                bottom: 140px;
+                left: 10px;
+                border-radius: 10px;
+                border-color: white;
+                font-weight: bold;
+            }
+            span {
+                font-weight: bold;
+            }
+            #first {
+                position: relative;
+                bottom: 163px;
+                right: 70px;
+            }
+            #second {
+                position: relative;
+                right: 48px;
+                bottom: 208px;
+            }
+            #third {
+                position: relative;
+                right: 37px;
+                bottom: 255px;
+            }
+            .home {
+            margin-left:55px;
+            border-color:beige;
+            background-color:  rgb(105, 200, 252);
+            color:whitesmoke;
+            height: 38px;
+            width: 38px;
+            position: relative;
+            left: 120px;
+            bottom: 95px;
+            border-radius: 20px;
+         }
+         label {
+            position: relative;
+            bottom: 230px;
+            right: 50px;
+         }
+         button {
+            position: relative;
+            bottom: 290px;
+            right: 8px;
+            height: 25px;
+            font-weight: bold;
+         }
+         #Info {
+            position: relative;
+            bottom: 300px;
+            right: 0px;
+         }
+         #but1 {
+            background-color: rgb(213, 213, 213);
+            border-radius: 10px;
+            border-color: bisque;
+         }
+         h4 {
+        position:relative;
+        bottom: 8px;
+         }
+         #strong1 {
+            position: relative;
+            bottom: 270px;
+            right: 30px;
+            background-color: darkgray;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 25px;
+         }
+         #strong2 {
+            position: relative;
+            bottom: 270px;
+            left: 0px;
+            background-color: darkgray;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 25px;
+         }
+         .font {
+            font-size: 0px;
+         }
+         #fourth {
+            position: relative;
+            bottom: 315px;
+         }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+        <h1>facebook</h1><a href="sign.html"><img class="home" src = "Screenshot_2022-12-31-18-38-45-281_com.google.android.googlequicksearchbox.png"></a>
+        <a href="profileback.html"><img class="imag1" src="FB_IMG_16568657805362723 (2).jpg"></a><h4>Hande Ercel</h4><br>
+        <a href="profilepic.html"><img class="imag2" src="IMG_20210415_071449.jpg"></a><br>
+        <button id="editProfile" onclick="addFriend()">Edit Profile</button><a href=""><button id="addToStory">Add to story</button></a><br><br>
+         <p id="first">Lives in<span> Sao Paulo, Brazil</span></p><br>
+         <p id="second">From<span> New York, North America</span></p><br>
+         <p id="third">In a relationship with  <strong> Alok Dhanush</strong></p><br><br>
+         <button id="but1"  onclick="showInfo()">Less information</button>
+         <p id="fourth"><br>Likes <strong>coffee, tea, chicken</strong><br>Hobbies <strong>cricket, swimming, reading</strong></p>
+         <p id="Info"></p>
+         <strong id="strong1">No friends</strong><strong id="strong2">No posts</strong>
+         <script>
+        function showInfo() {
+            const y = document.querySelector("#but1");
+            if (y.innerHTML == "Less information") {
+                y.innerHTML = "More information";
+                }
+            else{
+                y.innerHTML = "Less information";
+            }
+        } 
+        const el = document.querySelector("#but1");
+        const el1 = document.querySelector("#fourth");
+        function clearInfo() {
+            el1.classList.toggle("font");
+        }
+        el.addEventListener("click", clearInfo )
+         </script>
+    </fieldset>
+    </body>
+</html>
